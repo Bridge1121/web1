@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	ul,ol,li{
+		list-style: none;
+	}
+	.top-wrap{
+		width: 100%;
+	}
+	.top{
+		width: 1200px;
+		margin-left: 700px;
+	}
+	.w1{
+		float: left;
+		font-size: 0.85em;
+		color: rgb(69,69,69);
+		margin-top: 7px;
+	}
+	.w2{
+		float: left;
+		margin-left: 30px;
+		color: rgb(93,90,92);
+		margin-top: 5px;
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+	.w3{
+		float: left;
+		margin-left: 25px;
+		color: rgb(93,90,92);
+		font-size: 0.9em;
+		margin-top: 5px;
+		font-weight: 600;
+	}
+	.w4{
+		float: left;
+		margin-left: 35px;
+		color: rgb(69,69,69);
+		margin-top: 3px;
+	}
+	.w5{
+		float: left;
+		margin-left: 0px;
+		color: rgb(69,69,69);
+		margin-top: 3px;
+	}
+	.w6{
+		float: left;
+		margin-left: 12px;
+		color: rgb(69,69,69);
+		margin-top: 4px;
+		font-size: 0.9em;
+	}
+	.p1{
+		float: left;
+		margin-left: 30px;
+		margin-top: 3px;
+	}
+	.p2{
+		float: left;
+		margin-left: 10px;
+		margin-top: 3px;
+	}
+	.head{
+		width: 1200px;
+		padding-top: 50px;
+		margin: auto auto;
+	}
+	.p3{
+		float: left;
+	}
+	.w7>form>input{
+		font-size: 0.85em;
+		float: left;
+		padding-left: 220px;
+		margin-left: 200px;
+		margin-top: 20px;
+	}
+	.p4{
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+	.p5{
+		height: 30px;
+		width: 40px;
+		border-left: 1px solid rgb(214,214,214);
+		border-right:1px solid rgb(57,57,66);	
+		border-top: 1px solid rgb(57,57,66);
+		border-bottom:1px solid rgb(57,57,66);
+		float: left;
+		margin-top:20px; 
+		padding-left: 5px;
+		padding-top: 3px;
+		padding-bottom: 2px;
+	}
+	.guide-wrap{
+		width: 100%;
+	}
+	.guide>ul>li{
+		float: left;
+		padding-right: 60px;
+		padding-top: 20px;
+		margin-left: 10px;
+	}
+	.guide>form{
+		float: left;
+		margin-top: 20px;
+	}
+	.guide{
+		width: 1200px;
+		margin: auto auto;
+		height: 30px;
+		margin-top: 65px;
+		margin-left: 170px;
+	}
+	.guide>ul>li>a:hover{
+		color: #3aa747;
+		border-bottom: 3px solid #3aa747;
+		padding-bottom: 8px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.xian{
+		border: 2px solid #3aa747;
+		margin-top: 21px;
+	}
+	.middle-wrap{
+		width: 100%;
+	}
+	.right{
+    	position: fixed;
+    	right: 0px;
+    	top: 169px;
+    	width: 50px;
+    	height: 445px;
+    	padding-bottom: 10px;
+    	background-color: rgb(3,11,9);
+
+    }
+    .right li{
+    	height: 90px;
+    	text-align: center;
+    	width: 50px;
+    }
+    .right li img{
+    	margin-top: 38px;
+    	width: 20px;
+    	height: 20px;
+    	padding-right: 10px;
+    }
+    #pi{
+    	border-bottom: 1px solid #595e5d;
+    	float: left;
+    	width: 40px;
+    	margin-left: 5px;
+    }
+    .content-wrap{
+    	width: 100%;
+    }
+    .content{
+    	width: 1200px;
+    	margin: auto auto;
+    }
+    .w8>span{
+    	color: rgb(169,168,168);
+    	font-size: 0.8em;
+    }
+    .w8{
+    	padding-left: 25px;
+    	float: left;
+    	font-size: 0.9
+    }
+    .w9{
+    	color: rgb(169,168,168);
+    	float: left;
+    	font-size: 0.8em;
+    	margin-left: 990px;
+    	margin-top: 10px;
+    }
+    .table{
+    	width: 1200px;
+    	margin: auto auto;
+    	height: 140px;
+    	margin-top: 30px;
+    }
+    .picture{
+    	width: 1280px;
+    	margin: auto auto;
+    	margin-top: 61px;
+    	height: 620px;
+    	margin-left: 163px;
+    }
+    .picture>ul>li{
+    	margin-right: 30px;
+    	border: 1px solid rgb(136,136,136);
+    	margin-bottom: 30px;
+    	float: left;
+    	position: relative;
+    	text-align: center;
+    	height: 293px;
+    	width: 274px;
+    }
+    .picture>ul>li>div{
+    	width: 274px;
+    	background-color: rgba(58,64,62,0.9);
+    	height: 50px;
+    	position: absolute;
+    	bottom: 0px;
+    }
+    .picture>ul>li>div>p{
+    	color: white;
+    	text-align: center;
+    	line-height: 25px;
+    }
+    .img1:hover .w10{
+    	height: 293px;
+    	width: 274px;
+    	color: rgba(58,64,62,0.9);
+    	position: absolute;
+    	top: 0px;
+    	left: 0px;
+    }
+    .img1:hover .t1{
+    	margin-top: 125px;
+    }
+    .img1:hover .t2{
+    	margin-top: 28px;
+    }
+    .form1{
+    	border: 1px solid rgb(204,204,204);
+    	height: 46px;
+    	width: 1200px;
+    }
+    .form2{
+    	border-left: 1px solid rgb(204,204,204);
+    	border-right: 1px solid rgb(204,204,204);
+    	height: 46px;
+    	width: 1200px;
+    }
+    .form3{
+    	border: 1px solid rgb(204,204,204);
+    	height: 46px;
+    	width: 1200px;
+    }
+    .form1>ul>li{
+    	float: left;
+    	padding-right: 10px;
+    	padding-top: 15px;
+    }
+    .form2>ul>li{
+    	float: left;
+    	padding-top: 15px;
+    }
+    .form3>ul>li{
+    	float: left;
+    	padding-top: 15px;
+    }
+    .table{
+    	font-size: 0.9em;
+    }
+    .table a{
+    	color: rgb(115,115,115);
+    }
+    .table a:hover{
+    	color: #3aa747;
+    }
+    .th{
+    	padding-left: 50px;
+    	background: rgb(229,229,229);
+    	width: 90px;
+    	height: 32px;
+    }
+    .bdb{
+    	padding-left: 50px;
+    }
+    .bba{
+    	padding-left: 95px;
+    }
+    .hsf{
+    	padding-left: 90px;
+    }
+    .hn{
+    	padding-left: 85px;
+    }
+    .fn{
+    	padding-left: 72px;
+    }
+    .lh{
+    	padding-left: 76px;
+    }
+    .mh{
+    	padding-left: 92px;
+    }
+    .bottom-wrap{
+    	width: 100%;
+    	height: 100px;
+    	background: rgb(245,245,245);
+    	margin-top: 140px;
+    }
+    .bottom{
+    	width: 1500px;
+    	padding-top: 30px;
+    	margin: auto auto;
+    }
+    .bottom img{
+    	float: left;
+    }
+    .bottom div{
+    	margin-right: 44px;
+    	float: left;
+    }
+    .w11{
+    	margin-left: -25px;
+    	float: left;
+    }
+    .s2{
+    	font-size: 0.8em;
+    	line-height: 25px;
+    }
+    .b1{
+    	border-right: 1px solid rgb(224,224,224);
+    	height: 48px;
+    	float: left;
+    	padding-right: 10px;
+    }
+    #b2{
+    	border-right: 0px;
+    }
+    .footer-wrap{
+    	width: 100%;
+    	height: 100px;
+    	margin: auto auto;
+    	background: #323232;
+    }
+    .footer{
+    	line-height: 35px;
+    	text-align: center;
+    	color: rgb(224,224,224);
+    	padding-top: 25px;
+    }
+</style>
+</head>
+<body>
+	<div class="top-wrap">
+		<div class="top">
+			<div class="w1">嘿，欢迎来买猜商城！</div>
+		    <div class="w2"><a href="#">请登录</a></div>
+		    <div class="w3"><a href="#">免费注册</a></div>
+		    <div class="w4">
+		    	<form>
+		    		<select style="border: 0px; color: rgb(69,69,69);">
+		    			<option value="op1">我的订单&nbsp;&nbsp;</option>
+		    		</select>
+			    </form>
+		    </div>
+		    <div class="w5">
+		    	<form>
+		    		<select style="border: 0px; color: rgb(69,69,69);">
+		    			<option value="op2">我的买猜&nbsp;&nbsp;</option>
+		    		</select>
+		    	</form>
+		    </div>
+		    <div class="w6">帮助中心</div>
+		    <div class="p1">
+			<img src="./wb.png" alt="微博"/>
+		    </div>
+		    <div class="p2">
+		    	<img src="./wx.png" alt="微信"/>
+		    </div>
+		</div>
+	</div>
+	<div class="head-wrap">
+		<div class="head">
+			<div class="p3"><img src="./logo.png" alt="logo"/></div>
+			<div class="w7">
+				<form>
+					<input type="text" name="inp1" value="请输入搜索内容" style="width: 290px; height: 35px; border: 1px solid rgb(57,57,66); color: rgb(214,214,214);
+					border-right: 1px solid rgb(214,214,214);
+					"/>
+				</form>
+			</div>
+			<div class="p5"><img src="./search.png" alt="search" width="30px" height="30px" />
+            </div>
+			<div class="p4"><img src="./cart.png" alt="cart"></div>
+		</div>
+	</div>
+	<div class="guide-wrap">
+		<div class="guide">
+			<form>
+				<select style="border: 0px; font-weight: 600;">
+					<option value="op3">全部商品分类&nbsp;</option>
+				</select>
+			</form>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">名酒</a></li>
+				<li><a href="#">茗茶</a></li>
+				<li><a href="#">玉石</a></li>
+				<li><a href="#">休闲食品</a></li>
+				<li><a href="#">洗护用品</a></li>
+				<li><a href="#">土特产</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><a href="#">抽奖游戏</a></li>
+			</ul>
+		</div>
+		<div class="xian"></div>
+	</div>
+	<div class="middle-wrap">
+		<div class="middle">
+			<div id="p6"><img src="./banner.png" alt="banner" width="1560px;" /></div>
+			<ul class="right">
+				<div id="pi"><li><img src="./cart1.png" alt="cart1"/></li></div>
+				<div id="pi"><li><img src="./qq.png" alt="qq"/></li></div>
+				<div id="pi"><li><img src="./zuji.png" alt="zuji"/></li></div>
+				<div id="pi"><li><img src="./erweima.png" alt="erweima"/></li></div>
+				<div id="pi"><li><img src="./gotop.png" alt="gotop"/></li></div>
+			</ul>
+		</div>
+	</div>
+	<div class="content-wrap">
+		<div class="content">
+			<div class="w8"><a href="#">首&nbsp;页&nbsp;</a><span>&gt;&nbsp;&nbsp;玉石</span></div>
+			<div class="w9">共200件相关商品</div>
+		</div>
+	</div>
+	<div class="table">
+		<div class="form1">
+			<ul>
+				<li class="th" style="width: 80px;">玉石</li>
+				<li class="bdb" style="color: rgb(215,215,215);"><a href="#">白玉</a></li>
+				<li class="bba" style="padding-left:85px;"><a href="#">碧玉</a></li>
+				<li class="hsf" style="padding-left: 81px;"><a href="#">黄玉</a></li>
+				<li class="hn" style="padding-left: 75px;"><a href="#">和田玉</a></li>
+				<li class="fn" style="padding-left: 60px;"><a href="#">翡翠</a></li>
+				<li class="lh" style="padding-left: 65px;"><a href="#">绿松玉</a></li>
+				<li class="mh" style="padding-left: 80px;"><a href="#">墨玉</a></li>
+			</ul>
+		</div>
+		<div class="form2">
+			<ul>
+				<li class="th">其他</li>
+				<li class="bdb"><a href="#">吊坠</a></li>
+				<li class="bba"><a href="#">扳指</a></li>
+				<li class="hsf"><a href="#">手镯</a></li>
+			</ul>
+		</div>
+		<div class="form3">
+			<ul>
+				<li class="th">地区</li>
+				<li class="bdb"><a href="#">北京</a></li>
+				<li class="bba"><a href="#">安徽</a></li>
+				<li class="hsf"><a href="#">福建</a></li>
+				<li class="hn"><a href="#">内蒙古</a></li>
+				<li class="fn"><a href="#">宁夏</a></li>
+				<li class="lh"><a href="#">黑龙江</a></li>
+				<li class="mh"><a href="#">河北</a></li>
+				<li class="more" style="padding-left:  220px;"><a href="#">更多</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="picture-wrap">
+		<div class="picture">
+			<ul class="list">
+				<li class="img1">
+					<img src="./img1.png"/>
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;399.00
+						</p>
+						<p class="t2">翡翠千手观音吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img2.png" style="padding-top: 25px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;1980.00
+						</p>
+						<p class="t2">翡翠龙凤吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img3.png" style="padding-top: 60px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;199.00
+						</p>
+						<p class="t2">翡翠花蕊吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img4.png" style="padding-top: 50px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;199.00
+						</p>
+						<p class="t2">翡翠如意吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img5.png" style="padding-top: 35px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;99.00
+						</p>
+						<p class="t2">翡翠蝉吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img6.png" style="padding-top: 40px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;99.00
+						</p>
+						<p class="t2">翡翠观音(浅色)吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img7.png" style="padding-top: 45px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;199.00
+						</p>
+						<p class="t2">翡翠平安扣(深色)吊坠</p>
+					</div>
+				</li>
+				<li class="img1">
+					<img src="./img8.png" style="padding-top: 50px;" />
+					<div class="w10">
+						<p class="t1">竞猜价:&nbsp;￥&nbsp;&nbsp;199.00
+						</p>
+						<p class="t2">翡翠如意吊坠</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="bottom-wrap">
+		<div class="bottom" style="padding-left: 150px;">
+			<div class="b1" style="margin-left: 20px;">
+				<div>
+					<img src="./f1.png"/>
+				</div>
+				<div class="w11">
+					<p>资质认证</p>
+			        <p class="s2">服务商100%实名认证</p>
+			    </div>
+			    <div class="sx1"></div>
+		    </div>
+		    <div class="b1">
+			    <div><img src="./f2.png"/></div>
+			    <div class="w11">
+				    <p>支付安全</p>
+			        <p class="s2">明码标价支付及信息安全</p>
+			    </div>
+		    </div>
+		    <div class="b1" style="padding-right: 25px;">
+			    <div><img src="./f3.png"/></div>
+			    <div class="w11">
+				    <p>保险赔付</p>
+			        <p class="s2">为您提供担保赔付</p>
+			    </div>
+		    </div>
+		    <div class="b1" style="margin-left: 10px;" id="b2">
+			    <div><img src="./f4.png"/></div>
+			    <div class="w11">
+				    <p>售后无忧</p>
+			        <p class="s2">服务出问题经理会全程跟进</p>
+			    </div>
+		    </div>
+	    </div>
+	</div>
+	<div class="footer-wrap">
+		<div class="footer">
+			<p style="font-size: 0.9em;">首页&nbsp;&nbsp;|&nbsp;&nbsp;工商代理&nbsp;&nbsp;|&nbsp;&nbsp;财务代记&nbsp;&nbsp;|&nbsp;&nbsp;账股权交易与变更&nbsp;&nbsp;|&nbsp;&nbsp;企业贷款&nbsp;&nbsp;|&nbsp;&nbsp;办公室租赁&nbsp;&nbsp;|&nbsp;&nbsp;法律服务</p>
+			<p style="font-size: 0.8em;">© 2017-2018 买猜商城有限公司 版权所有</p>
+		</div>
+	</div>
+</body>
+</html>
